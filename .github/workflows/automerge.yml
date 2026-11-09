@@ -3,12 +3,13 @@
 
 name: Automerge PRs from bots
 
-on:
-  pull_request_target:          # Needed as GH_TOKEN_BOT_EVE needed for approval.
-    types:
-      - opened
-      - synchronize             # zizmor: ignore[dangerous-triggers]
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   pull_request_target:          # Needed as GH_TOKEN_BOT_EVE needed for approval.
+#     types:
+#       - opened
+#       - synchronize             # zizmor: ignore[dangerous-triggers]
+# 
 permissions: {}
 
 jobs:

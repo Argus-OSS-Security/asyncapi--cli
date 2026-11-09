@@ -4,26 +4,27 @@
 # This action notifies community on slack whenever there is a new issue, PR or discussion started in given repository
 name: Notify slack and email subscribers whenever TSC members are mentioned in GitHub
 
-on:
-  issue_comment:
-    types:
-      - created
-
-  discussion_comment:
-    types:
-      - created
-
-  issues:
-    types:
-      - opened
-
-  pull_request_target:      # Needed to access secrets. The checkout is done on base branch so script cannot be malicious.
-    types:
-      - opened              # zizmor: ignore[dangerous-triggers]
-  discussion:
-    types:
-      - created
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   issue_comment:
+#     types:
+#       - created
+# 
+#   discussion_comment:
+#     types:
+#       - created
+# 
+#   issues:
+#     types:
+#       - opened
+# 
+#   pull_request_target:      # Needed to access secrets. The checkout is done on base branch so script cannot be malicious.
+#     types:
+#       - opened              # zizmor: ignore[dangerous-triggers]
+#   discussion:
+#     types:
+#       - created
+# 
 permissions:
   contents: read            # To checkout repository
 

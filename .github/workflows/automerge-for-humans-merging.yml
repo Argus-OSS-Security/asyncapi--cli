@@ -4,18 +4,19 @@
 # Purpose of this workflow is to allow people to merge PR without a need of maintainer doing it. If all checks are in place (including maintainers approval) - JUST MERGE IT!
 name: Automerge For Humans
 
-on:
-  pull_request_target:
-    types:
-      - labeled
-      - unlabeled
-      - synchronize
-      - opened
-      - edited
-      - ready_for_review
-      - reopened
-      - unlocked                              # zizmor: ignore[dangerous-triggers] needed if we want author to be our bot
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   pull_request_target:
+#     types:
+#       - labeled
+#       - unlabeled
+#       - synchronize
+#       - opened
+#       - edited
+#       - ready_for_review
+#       - reopened
+#       - unlocked                              # zizmor: ignore[dangerous-triggers] needed if we want author to be our bot
+# 
 permissions: {}
 
 jobs:

@@ -3,14 +3,15 @@
 
 name: Welcome first time contributors
 
-on:
-  pull_request_target:      # Needed to write welcome comments on fork PRs; script only uses the GitHub API.
-    types:
-      - opened              # zizmor: ignore[dangerous-triggers]
-  issues:
-    types:
-      - opened
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   pull_request_target:      # Needed to write welcome comments on fork PRs; script only uses the GitHub API.
+#     types:
+#       - opened              # zizmor: ignore[dangerous-triggers]
+#   issues:
+#     types:
+#       - opened
+# 
 permissions:
   issues: read                  # Required to check if the issue is the user's first contribution
   pull-requests: read           # Required to check if the pull request is the user's first contribution

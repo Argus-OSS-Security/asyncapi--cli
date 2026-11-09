@@ -3,10 +3,11 @@
 
 name: Lint PR title
 
-on:
-  pull_request:
-    types: [opened, reopened, synchronize, edited, ready_for_review]
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   pull_request:
+#     types: [opened, reopened, synchronize, edited, ready_for_review]
+# 
 permissions: {}
 
 jobs:

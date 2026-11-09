@@ -9,11 +9,12 @@
 
 name: Bounty Program commands
 
-on:
-  issue_comment:
-    types:
-      - created
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   issue_comment:
+#     types:
+#       - created
+# 
 env:
   BOUNTY_PROGRAM_LABELS_JSON: |
     [

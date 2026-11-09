@@ -3,11 +3,12 @@
 
 name: 'Announce releases in different channels'
 
-on: 
-  release:
-    types: 
-      - published
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on: 
+#   release:
+#     types: 
+#       - published
+# 
 permissions:
   contents: read            # To checkout code and read release information
 

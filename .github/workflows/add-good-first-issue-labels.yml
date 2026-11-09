@@ -4,11 +4,12 @@
 # Purpose of this workflow is to enable anyone to label issue with 'Good First Issue' and 'area/*' with a single command.
 name: Add 'Good First Issue' and 'area/*' labels # if proper comment added
 
-on:
-  issue_comment:
-    types:
-      - created
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   issue_comment:
+#     types:
+#       - created
+# 
 permissions: {}
 
 jobs:

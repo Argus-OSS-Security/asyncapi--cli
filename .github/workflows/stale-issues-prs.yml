@@ -3,10 +3,11 @@
 
 name: Manage stale issues and PRs
 
-on:
-  schedule:
-  - cron: "0 0 * * *"
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   schedule:
+#   - cron: "0 0 * * *"
+# 
 permissions: {}
 
 jobs:

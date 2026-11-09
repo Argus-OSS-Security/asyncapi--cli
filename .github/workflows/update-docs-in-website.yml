@@ -1,12 +1,13 @@
 name: Update latest CLI documentation in the website
 
-on:
-  push:
-    branches:
-      - 'master'
-    paths:
-      - 'docs/*.md'
-  workflow_dispatch:
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   push:
+#     branches:
+#       - 'master'
+#     paths:
+#       - 'docs/*.md'
+#   workflow_dispatch:
 jobs:
   Make-PR:
     name: Make PR on website repository with updated latest CLI documentation

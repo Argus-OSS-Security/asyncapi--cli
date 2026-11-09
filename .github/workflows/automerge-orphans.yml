@@ -3,10 +3,11 @@
 
 name: 'Notify on failing automerge'
 
-on:
-  schedule:
-  - cron: "0 0 * * *"
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   schedule:
+#   - cron: "0 0 * * *"
+# 
 permissions: {}
 
 jobs:

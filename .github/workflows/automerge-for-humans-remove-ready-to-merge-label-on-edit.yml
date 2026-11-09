@@ -5,12 +5,13 @@
 # Label is removed once above action is detected
 name: Remove ready-to-merge label
 
-on:
-  pull_request_target:
-    types:
-      - synchronize
-      - edited                                # zizmor: ignore[dangerous-triggers] needed as pull_request token is read-only
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   pull_request_target:
+#     types:
+#       - synchronize
+#       - edited                                # zizmor: ignore[dangerous-triggers] needed as pull_request token is read-only
+# 
 permissions: {}
 
 jobs:

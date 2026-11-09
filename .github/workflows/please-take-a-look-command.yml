@@ -7,10 +7,11 @@
 
 name: Please take a Look
 
-on:
-  issue_comment:
-    types: [created]
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   issue_comment:
+#     types: [created]
+# 
 permissions: {}
 
 jobs:

@@ -3,16 +3,17 @@
 
 name: Trigger MAINTAINERS.yaml file update
 
-on:
-  push:
-    branches: [ master ]
-    paths:
-      # Check all valid CODEOWNERS locations: 
-      # https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners#codeowners-file-location
-      - 'CODEOWNERS'
-      - '.github/CODEOWNERS'
-      - '.docs/CODEOWNERS'
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   push:
+#     branches: [ master ]
+#     paths:
+#       # Check all valid CODEOWNERS locations: 
+#       # https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners#codeowners-file-location
+#       - 'CODEOWNERS'
+#       - '.github/CODEOWNERS'
+#       - '.docs/CODEOWNERS'
+# 
 permissions: 
   contents: read            # Just to limit GITHUB_TOKEN as we use GH_TOKEN only
 

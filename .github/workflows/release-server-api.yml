@@ -1,13 +1,14 @@
 name: Release Server API Image
-on: 
-  release:
-    types: 
-      - published
-  workflow_dispatch:
-    inputs:
-      version:
-        description: 'Existing stable CLI tag (vX.Y.Z)'
-        required: true
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on: 
+#   release:
+#     types: 
+#       - published
+#   workflow_dispatch:
+#     inputs:
+#       version:
+#         description: 'Existing stable CLI tag (vX.Y.Z)'
+#         required: true
 permissions:
   contents: read
 jobs:

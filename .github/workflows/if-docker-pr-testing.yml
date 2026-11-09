@@ -3,10 +3,11 @@
 #It does magic only if there is a Dockerfile in the root of the project
 name: PR testing - if Docker
 
-on:
-  pull_request:
-    types: [opened, reopened, synchronize, ready_for_review]
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   pull_request:
+#     types: [opened, reopened, synchronize, ready_for_review]
+# 
 env:
   IMAGE_NAME: ${{ github.repository }}
 

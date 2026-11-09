@@ -6,13 +6,14 @@
 
 name: Bump package version in dependent repos - if Node project
 
-on:
-  # It cannot run on release event as when release is created then version is not yet bumped in package.json
-  # This means we cannot extract easily latest version and have a risk that package is not yet on npm
-  push:
-    branches:
-      - master
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   # It cannot run on release event as when release is created then version is not yet bumped in package.json
+#   # This means we cannot extract easily latest version and have a risk that package is not yet on npm
+#   push:
+#     branches:
+#       - master
+# 
 jobs:
   bump-in-dependent-projects:
     name: Bump this package in repositories that depend on it

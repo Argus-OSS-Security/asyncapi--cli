@@ -12,10 +12,11 @@ name: Update PR branches from fork
 permissions:
   contents: read
 
-on:
-  issue_comment: 
-    types: [created]
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   issue_comment: 
+#     types: [created]
+# 
 jobs:
   update-pr:
     name: Update the fork PR with upstream changes

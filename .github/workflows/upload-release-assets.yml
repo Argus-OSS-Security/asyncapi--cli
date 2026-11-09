@@ -1,10 +1,11 @@
 name: Upload custom assets to GitHub release
 
-on:
-  release:
-    types:
-      - published
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   release:
+#     types:
+#       - published
+# 
 env:
   CI: true
 

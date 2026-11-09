@@ -10,14 +10,15 @@
 
 name: autoupdate
 
-on:
-  push:
-    branches-ignore:  
-      - 'version-bump/**'
-      - 'dependabot/**'
-      - 'bot/**'
-      - 'all-contributors/**'
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   push:
+#     branches-ignore:  
+#       - 'version-bump/**'
+#       - 'dependabot/**'
+#       - 'bot/**'
+#       - 'all-contributors/**'
+# 
 permissions: {}
 
 jobs:
